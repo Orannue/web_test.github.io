@@ -1,7 +1,7 @@
 ---
-title: "BIVLab - Joining Us"
+title: "MIPG - Joining Us"
 layout: gridlay
-excerpt: "BIVLab: Joining Us"
+excerpt: "MIPG: Joining Us"
 sitemap: false
 permalink: /joining/
 ---
