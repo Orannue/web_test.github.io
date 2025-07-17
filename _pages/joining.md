@@ -8,8 +8,6 @@ permalink: /joining/
 
 ## Joining Us
 
-Our lab is looking forward to having elegant students or researchers to join us.
-Positions for Master, Ph.D., and post-doc are opening. If you are interested in our research and want to join us,
- please contact Prof. Zhao (fzhao956@ustc.edu.cn).
+Our lab warmly welcomes motivated and talented students to join us. We have open positions for Master's and Ph.D. programs. If you are passionate about our research topics and interested in becoming part of our team, please feel free to contact Assoc. Prof. Qi Mao at <a href="mailto:qimao@cuc.edu.cn">qimao@cuc.edu.cn</a>.
 
 <br>
