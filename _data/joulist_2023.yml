@@ -1,30 +1,6 @@
 - title: "Enhancing Style-Guided Image-to-Image Translation via Self-Supervised Metric Learning"
-  authors: Qi Mao Siwei Ma
+  authors: Qi Mao, Siwei Ma
   venue: "IEEE Transactions on Multimedia (TMM)"
-  link:
-    url: 
-    display: \[Paper\]
-  code:
-    url: 
-    display: \[Code\]
-  highlight: 0
-  year: 2023
-
-- title: "Deep Adaptive Pansharpening via Uncertainty-aware Image Fusion"
-  authors: Kaiwen Zheng, Jie Huang, Man Zhou, Danfeng Hong, Feng Zhao
-  venue: "IEEE Transactions on Geoscience and Remote Sensing (TGRS)"
-  link:
-    url: 
-    display: \[Paper\]
-  code:
-    url: 
-    display: \[Code\]
-  highlight: 0
-  year: 2023
-
-- title: "Counterfactual Attention Alignment for Visible-Infrared Cross-Modality Person Re-Identification"
-  authors: Zongzhe Sun, Feng Zhao
-  venue: "Pattern Recognition Letters"
   link:
     url: 
     display: \[Paper\]
