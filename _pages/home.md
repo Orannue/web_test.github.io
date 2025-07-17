@@ -1,12 +1,12 @@
 ---
-title: "BIVLab - Home"
+title: "MIPG - Home"
 layout: homelay
-excerpt: "Brain-Inspired Vision Laboratory USTC"
+excerpt: "CUC Multimedia Intelligent Processing Group"
 sitemap: false
 permalink: /
 ---
 
-Welcome to the webpage of the **Brain-Inspired Vision Laboratory (BIVLab)**. We are based in the [Department of Automation, School of Information Science and Technology at the University of Science and Technology of China](https://sist.ustc.edu.cn/main.htm). We aim to address real-world problems through deep-learning approaches and bring artificial intelligence into our daily life. To this purpose, we maintain a research agenda that balances methods and applications. Some of our current areas of interest are:
+Welcome to the webpage of the **Multimedia Intelligent Processing Group (MIPG)**. We are based in the [Department of Automation, School of Information Science and Technology at the University of Science and Technology of China](https://sist.ustc.edu.cn/main.htm). We aim to address real-world problems through deep-learning approaches and bring artificial intelligence into our daily life. To this purpose, we maintain a research agenda that balances methods and applications. Some of our current areas of interest are:
 - **Large Langauge Models** (NEW Topic!🔥🔥🔥), e.g., language agent, multi-modal LLM
 - **Diffusion Models** (NEW Topic!🔥🔥🔥), e.g., image generation, video generation
 - **Perception for autonomous driving**, e.g., 2D/3D/multi-modal object detection, multi-view 3D object detection, semantic segmentation, and depth estimation
