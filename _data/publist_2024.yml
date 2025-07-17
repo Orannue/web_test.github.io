@@ -33,3 +33,15 @@
     display: \[Code\]
   highlight: 0
   year: 2024
+
+- title: "Extreme Image Compression using Fine-tuned VQGANs"
+  authors: Qi Mao, Tinghan Yang, Yinuo Zhang, Zijian Wang, Meng Wang, Shiqi Wang, Siwei Ma
+  venue: "2024 Data Compression Conference (DCC)"
+  link:
+    url: https://arxiv.org/abs/2307.08265
+    display: \[Paper\]
+  code:
+    url: https://github.com/CUC-MIPG/VQGAN-Compression
+    display: \[Code\]
+  highlight: 0
+  year: 2024
