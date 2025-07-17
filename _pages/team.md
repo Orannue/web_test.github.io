@@ -8,7 +8,7 @@ permalink: /team/
 
 ## Group Members
 
-### Academic Staff
+### Faculty
 
 <!-- Jump to [PhD students](#phd), [Master students](#masters) -->
 
