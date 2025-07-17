@@ -1,7 +1,7 @@
-- name: Feng Zhao
-  photo: fengzhao.jpg
-  info: Professor
-  homepage: 
+- name: Qi Mao
+  photo: qimao.jpg
+  info: Associate Professor
+  homepage: https://sites.google.com/view/qi-mao/
   number_educ: 2
-  education1: PhD at CUHK
+  education1: PhD at Peking University
   # education2:
