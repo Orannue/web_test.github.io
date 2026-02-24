@@ -42,8 +42,8 @@ layout: default
       var slides = track.querySelectorAll('.joining-header-carousel-slide');
       var n = slides.length / 2;
       if (n < 1) return;
-      var slidePct = 50 / n;
-      track.style.width = '200%';
+      var slidePct = 25;
+      track.style.width = (50 * n) + '%';
       for (var i = 0; i < slides.length; i++) slides[i].style.width = slidePct + '%';
       var start = 0;
       var duration = 25000;
