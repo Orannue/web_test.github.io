@@ -1,8 +1,23 @@
-- date: November 2026
+# 每条可加 link（选填），有 link 时标题显示为可点链接（如公众号推文）
+# 公众号推文示例：复制推送的标题和链接即可
+# - date: 2025-01-15
+#   headline: "我校 MIPG 实验室最新成果"
+#   link: "https://mp.weixin.qq.com/s/xxxxx"
+
+- date: February 2026
   headline: "We have 1 paper accepted to CVPR 2026!"
+
+- date: December 2025
+  headline: "[ICME 2026 Call for Paper] Generative AI and Intelligent Agents: Reshaping New Paradigms in Multimedia Coding, Processing and Evaluation"
+  link: "https://mp.weixin.qq.com/s/oqcjyq1TH3H3JocGJChRcw"
 
 - date: November 2025
   headline: "We have 1 paper accepted to WACV 2026!"
+  link: "https://mp.weixin.qq.com/s/hcIq79Wxgvtpio2r9eh6sg"
+
+- date: November 2025
+  headline: "Member of the CUC-MIPG is awarded first prize at the Golden Rose Academic Forum!"
+  link: "https://mp.weixin.qq.com/s/WzPagChnciD3kpAExVkoiQ"
 
 - date: September 2025
   headline: "We have 1 paper accepted to TMM!"
