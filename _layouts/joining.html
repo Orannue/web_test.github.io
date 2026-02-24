@@ -2,6 +2,10 @@
 layout: default
 ---
 <div id="joining-page" class="col-sm-12">
+  <div class="joining-content">
+    {{ content }}
+  </div>
+
   {% if site.data.joining_slides and site.data.joining_slides.size > 0 %}
   <div class="joining-header-carousel" id="joiningHeaderCarousel">
     <div class="joining-header-carousel-track" style="width: {{ site.data.joining_slides.size | times: 100 }}%;">
@@ -51,8 +55,4 @@ layout: default
   {% else %}
   <img src="{{ site.url }}{{ site.baseurl }}/images/mipg_photos/2024.jpg" class="img-responsive joining-fallback-img" alt="Joining MIPG">
   {% endif %}
-
-  <div class="joining-content">
-    {{ content }}
-  </div>
 </div>
