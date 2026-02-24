@@ -403,11 +403,14 @@ firstp { }
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
   }
-  /* People 页：成员名字与下方职称/年级等正文都放大 */
-  .col-sm-6 h4 {
-    font-size: 1.5rem;
+  /* People 页：成员名字与下方职称/年级等正文都放大（专用 class 确保覆盖） */
+  .team-member-name {
+    font-size: 1.6rem !important;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    margin-bottom: 0.35rem;
   }
-  .col-sm-6 h4 a {
+  .team-member-name a {
     color: $mipg-primary-light;
   }
   .col-sm-6 p,

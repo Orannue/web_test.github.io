@@ -23,7 +23,7 @@ permalink: /team/
 
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4><a href="{{member.homepage}}">{{ member.name }}</a></h4> 
+  <h4 class="team-member-name"><a href="{{member.homepage}}">{{ member.name }}</a></h4> 
   <i>{{ member.info }}</i>
   <ul style="overflow: hidden">
 
@@ -56,7 +56,7 @@ permalink: /team/
 
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%"  style="float: left;" />
-  <h4><a href="{{member.homepage}}">{{ member.name }}</a></h4> 
+  <h4 class="team-member-name"><a href="{{member.homepage}}">{{ member.name }}</a></h4> 
   <p>{{ member.year }}</p>
   <p>{{ member.info }}</p>
   <ul style="overflow: hidden">
@@ -91,7 +91,7 @@ permalink: /team/
 
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%"  style="float: left;" />
-  <h4><a href="{{member.homepage}}">{{ member.name }}</a></h4> 
+  <h4 class="team-member-name"><a href="{{member.homepage}}">{{ member.name }}</a></h4> 
   <p>{{ member.year }}</p>
   <p>{{ member.info }}</p>
   <ul style="overflow: hidden">
@@ -125,7 +125,7 @@ permalink: /team/
 
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%"  style="float: left;" />
-  <h4><a href="{{member.homepage}}">{{ member.name }}</a></h4> 
+  <h4 class="team-member-name"><a href="{{member.homepage}}">{{ member.name }}</a></h4> 
   <p>{{ member.year }}</p>
   <p>{{ member.info }}</p>
   <ul style="overflow: hidden">
