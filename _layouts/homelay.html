@@ -4,9 +4,9 @@ layout: default
   <div id="homeid" class="col-sm-8">
     {% if site.data.header_slides and site.data.header_slides.size > 0 %}
     <div class="home-header-carousel" id="homeHeaderCarousel">
-      <div class="home-header-carousel-track">
+      <div class="home-header-carousel-track" style="width: {{ site.data.header_slides.size | times: 100 }}%;">
         {% for slide in site.data.header_slides %}
-        <div class="home-header-carousel-slide">
+        <div class="home-header-carousel-slide" style="width: {{ 100 | divided_by: site.data.header_slides.size }}%;">
           <img src="{{ slide.image | prepend: site.baseurl | prepend: site.url }}" class="img-responsive" alt="MIPG">
         </div>
         {% endfor %}
@@ -31,7 +31,7 @@ layout: default
         var idx = 0;
         function goTo(k) {
           idx = (k + n) % n;
-          track.style.transform = 'translateX(-' + idx * 100 + '%)';
+          track.style.transform = 'translateX(-' + idx * (100 / n) + '%)';
           dots.forEach(function(d, i) { d.classList.toggle('active', i === idx); });
         }
         dots.forEach(function(d, i) {

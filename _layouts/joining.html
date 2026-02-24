@@ -1,12 +1,56 @@
 ---
 layout: default
 ---
+<div id="joining-page" class="col-sm-12">
+  {% if site.data.joining_slides and site.data.joining_slides.size > 0 %}
+  <div class="joining-header-carousel" id="joiningHeaderCarousel">
+    <div class="joining-header-carousel-track" style="width: {{ site.data.joining_slides.size | times: 100 }}%;">
+      {% for slide in site.data.joining_slides %}
+      <div class="joining-header-carousel-slide" style="width: {{ 100 | divided_by: site.data.joining_slides.size }}%;">
+        <img src="{{ slide.image | prepend: site.baseurl | prepend: site.url }}" class="img-responsive" alt="Joining MIPG">
+        {% if slide.time or slide.location %}
+        <div class="joining-slide-caption">
+          {% if slide.time %}<span class="joining-meta"><strong>时间</strong> {{ slide.time }}</span>{% endif %}
+          {% if slide.location %}<span class="joining-meta"><strong>地点</strong> {{ slide.location }}</span>{% endif %}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    <div class="joining-header-carousel-dots" aria-hidden="true"></div>
+  </div>
+  <script>
+    (function() {
+      var track = document.querySelector('#joiningHeaderCarousel .joining-header-carousel-track');
+      var dotsWrap = document.querySelector('#joiningHeaderCarousel .joining-header-carousel-dots');
+      if (!track || !dotsWrap) return;
+      var slides = track.querySelectorAll('.joining-header-carousel-slide');
+      var n = slides.length;
+      if (n <= 1) return;
+      for (var i = 0; i < n; i++) {
+        var d = document.createElement('span');
+        d.className = 'joining-header-carousel-dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('data-index', i);
+        dotsWrap.appendChild(d);
+      }
+      var dots = dotsWrap.querySelectorAll('.joining-header-carousel-dot');
+      var idx = 0;
+      function goTo(k) {
+        idx = (k + n) % n;
+        track.style.transform = 'translateX(-' + idx * (100 / n) + '%)';
+        dots.forEach(function(d, i) { d.classList.toggle('active', i === idx); });
+      }
+      dots.forEach(function(d, i) {
+        d.addEventListener('click', function() { goTo(i); });
+      });
+      setInterval(function() { goTo(idx + 1); }, 5000);
+    })();
+  </script>
+  {% else %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/mipg_photos/2024.jpg" class="img-responsive joining-fallback-img" alt="Joining MIPG">
+  {% endif %}
 
-<div id="homeid" class="col-sm-8">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/mipg_photos/2024.jpg" class="img-responsive">
-  <br>
-  {{ content }}
+  <div class="joining-content">
+    {{ content }}
+  </div>
 </div>
-<!-- <div id="joining" class="col-sm-12">
-  {{ content }}
-</div> -->

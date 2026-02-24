@@ -1,6 +1,6 @@
 ---
 title: "MIPG - Joining Us"
-layout: gridlay
+layout: joining
 excerpt: "MIPG: Joining Us"
 sitemap: false
 permalink: /joining/
