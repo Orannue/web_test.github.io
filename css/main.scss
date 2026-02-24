@@ -112,30 +112,45 @@ firstp { }
   }
 }
 
-/* ========== Home ========== */
-#homeid {
-  h3 {
-    color: $mipg-primary;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid rgba(13, 122, 110, 0.2);
-  }
-  img.img-responsive {
-    border-radius: 12px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  }
-  /* 首页头图轮播：统一比例裁剪，向左滑动切换 */
-  .home-header-carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-    margin-bottom: 0;
-    aspect-ratio: 21 / 9;
+/* ========== Home：首屏全宽轮播（叠加效果）+ 下方 About Us | News 并排 ========== */
+.home-hero-wrap {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  overflow: visible;
+  margin-bottom: 1.5rem;
+}
+
+.home-hero {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+}
+
+/* 首页头图轮播：整页一横排，底层大图半透明 + 中间当前图不透明 */
+.home-header-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0;
+  aspect-ratio: 21 / 9;
+  .home-carousel-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0.35;
+      transform: scale(1.12);
+      transition: opacity 0.5s ease;
+    }
   }
   .home-header-carousel-track {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-wrap: nowrap;
     transition: transform 0.6s ease-out;
@@ -156,11 +171,12 @@ firstp { }
   }
   .home-header-carousel-dots {
     position: absolute;
-    bottom: 12px;
+    bottom: 14px;
     left: 0;
     right: 0;
     text-align: center;
     pointer-events: none;
+    z-index: 2;
   }
   .home-header-carousel-dot {
     display: inline-block;
@@ -177,6 +193,27 @@ firstp { }
       background: $mipg-card-bg;
       box-shadow: 0 0 0 2px $mipg-primary;
     }
+  }
+  &.home-header-carousel--single img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+  }
+}
+
+#homeid {
+  h3 {
+    color: $mipg-primary;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(13, 122, 110, 0.2);
+  }
+  img.img-responsive {
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   }
   .home-intro {
     line-height: 1.7;
@@ -214,7 +251,7 @@ firstp { }
     min-height: 0;
     .joining-slide-image {
       width: 100%;
-      aspect-ratio: 21 / 9;
+      aspect-ratio: 16 / 9;
       overflow: hidden;
       flex-shrink: 0;
       img {
