@@ -40,9 +40,9 @@ Papers by MIPG members (Starting 2021)
 
 ### 2024
 
-<h4 class="pub-section">[Journal]</h4>
+<!-- <h4 class="pub-section">[Journal]</h4> -->
 
-{% for publi in site.data.joulist_2024 %}
+<!-- {% for publi in site.data.joulist_2024 %}
 <div class="pub-item">
   <span class="pub-title">{{ publi.title }}</span><br />
   <span class="pub-authors">{{ publi.authors }}</span><br />
@@ -50,7 +50,7 @@ Papers by MIPG members (Starting 2021)
   <a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
   <a href="{{ publi.code.url }}">{{ publi.code.display }}</a>
 </div>
-{% endfor %}
+{% endfor %} -->
 
 <h4 class="pub-section">[Conference]</h4>
 

@@ -2,7 +2,47 @@
 layout: default
 ---
   <div id="homeid" class="col-sm-8">
+    {% if site.data.header_slides and site.data.header_slides.size > 0 %}
+    <div class="home-header-carousel" id="homeHeaderCarousel">
+      <div class="home-header-carousel-track">
+        {% for slide in site.data.header_slides %}
+        <div class="home-header-carousel-slide">
+          <img src="{{ slide.image | prepend: site.baseurl | prepend: site.url }}" class="img-responsive" alt="MIPG">
+        </div>
+        {% endfor %}
+      </div>
+      <div class="home-header-carousel-dots" aria-hidden="true"></div>
+    </div>
+    <script>
+      (function() {
+        var track = document.querySelector('#homeHeaderCarousel .home-header-carousel-track');
+        var dotsWrap = document.querySelector('#homeHeaderCarousel .home-header-carousel-dots');
+        if (!track || !dotsWrap) return;
+        var slides = track.querySelectorAll('.home-header-carousel-slide');
+        var n = slides.length;
+        if (n <= 1) return;
+        for (var i = 0; i < n; i++) {
+          var d = document.createElement('span');
+          d.className = 'home-header-carousel-dot' + (i === 0 ? ' active' : '');
+          d.setAttribute('data-index', i);
+          dotsWrap.appendChild(d);
+        }
+        var dots = dotsWrap.querySelectorAll('.home-header-carousel-dot');
+        var idx = 0;
+        function goTo(k) {
+          idx = (k + n) % n;
+          track.style.transform = 'translateX(-' + idx * 100 + '%)';
+          dots.forEach(function(d, i) { d.classList.toggle('active', i === idx); });
+        }
+        dots.forEach(function(d, i) {
+          d.addEventListener('click', function() { goTo(i); });
+        });
+        setInterval(function() { goTo(idx + 1); }, 5000);
+      })();
+    </script>
+    {% else %}
     <img src="{{ site.url }}{{ site.baseurl }}/images/header.jpg" class="img-responsive" alt="MIPG">
+    {% endif %}
     <h3>About Us</h3>
     <div class="home-intro">
       {{ content }}
