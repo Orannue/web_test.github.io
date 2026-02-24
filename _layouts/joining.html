@@ -7,11 +7,13 @@ layout: default
     <div class="joining-header-carousel-track" style="width: {{ site.data.joining_slides.size | times: 100 }}%;">
       {% for slide in site.data.joining_slides %}
       <div class="joining-header-carousel-slide" style="width: {{ 100 | divided_by: site.data.joining_slides.size }}%;">
-        <img src="{{ slide.image | prepend: site.baseurl | prepend: site.url }}" class="img-responsive" alt="Joining MIPG">
+        <div class="joining-slide-image">
+          <img src="{{ slide.image | prepend: site.baseurl | prepend: site.url }}" class="img-responsive" alt="Joining MIPG">
+        </div>
         {% if slide.time or slide.location %}
         <div class="joining-slide-caption">
-          {% if slide.time %}<span class="joining-meta"><strong>时间</strong> {{ slide.time }}</span>{% endif %}
-          {% if slide.location %}<span class="joining-meta"><strong>地点</strong> {{ slide.location }}</span>{% endif %}
+          {% if slide.time %}<span class="joining-meta"><strong>Time</strong> {{ slide.time }}</span>{% endif %}
+          {% if slide.location %}<span class="joining-meta"><strong>Location</strong> {{ slide.location }}</span>{% endif %}
         </div>
         {% endif %}
       </div>

@@ -63,9 +63,23 @@ firstp { }
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   border: none;
   .navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     font-weight: 700;
     color: $mipg-primary !important;
     font-size: 1.25rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    .navbar-brand-logo {
+      height: 32px;
+      width: auto;
+      display: block;
+      vertical-align: middle;
+    }
+    .navbar-brand-text {
+      vertical-align: middle;
+    }
   }
   .nav > li > a {
     color: $mipg-text !important;
@@ -111,7 +125,7 @@ firstp { }
     border-radius: 12px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   }
-  /* 首页头图轮播：向左滑动切换 */
+  /* 首页头图轮播：统一比例裁剪，向左滑动切换 */
   .home-header-carousel {
     position: relative;
     width: 100%;
@@ -119,19 +133,25 @@ firstp { }
     border-radius: 12px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     margin-bottom: 0;
+    aspect-ratio: 21 / 9;
   }
   .home-header-carousel-track {
     display: flex;
     flex-wrap: nowrap;
     transition: transform 0.6s ease-out;
+    height: 100%;
   }
   .home-header-carousel-slide {
     flex-shrink: 0;
+    height: 100%;
+    overflow: hidden;
     img {
       width: 100%;
+      height: 100%;
       display: block;
       margin: 0;
-      vertical-align: top;
+      object-fit: cover;
+      object-position: center;
     }
   }
   .home-header-carousel-dots {
@@ -191,11 +211,20 @@ firstp { }
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    img {
+    min-height: 0;
+    .joining-slide-image {
       width: 100%;
-      display: block;
-      margin: 0;
-      vertical-align: top;
+      aspect-ratio: 21 / 9;
+      overflow: hidden;
+      flex-shrink: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0;
+        object-fit: cover;
+        object-position: center;
+      }
     }
     .joining-slide-caption {
       display: flex;
