@@ -10,7 +10,7 @@ layout: default
     </div>
     <div class="home-header-carousel-track" style="width: {{ site.data.header_slides.size | times: 100 }}%;">
       {% for slide in site.data.header_slides %}
-      <div class="home-header-carousel-slide" style="width: {{ 100 | divided_by: site.data.header_slides.size }}%;" data-src="{{ slide.image | prepend: site.baseurl | prepend: site.url }}">
+      <div class="home-header-carousel-slide" style="width: {{ 100.0 | divided_by: site.data.header_slides.size }}%;" data-src="{{ slide.image | prepend: site.baseurl | prepend: site.url }}">
         <img src="{{ slide.image | prepend: site.baseurl | prepend: site.url }}" alt="MIPG">
       </div>
       {% endfor %}
