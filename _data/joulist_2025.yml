@@ -1,9 +1,9 @@
 
-- title: "Structural and Statistical Texture Knowledge Distillation and Learning for Segmentation"
-  authors: Deyi Ji, Feng Zhao, Hongtao Lu, Feng Wu, Jieping Ye
-  venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence(TPAMI)"
+- title: "StarVid: Enhancing Semantic Alignment in Video Diffusion Models via Spatial and SynTactic Guided Attention Refocusing"
+  authors: Yuanhang Li, Qi Mao, Lan Chen, Zhen Fang, Lei Tian, Xinyan Xiao, Libiao Jin, Hua Wu
+  venue: "IEEE Transactions on Multimedia (TMM)"
   link:
-    url: 
+    url: https://arxiv.org/abs/2409.15259
     display: \[Paper\]
   code:
     url: 
