@@ -405,16 +405,16 @@ firstp { }
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
   }
-  /* People 页：成员名字明显大于下方职称/年级等正文 */
+  /* People 页：成员名字与下方职称/年级等正文都放大 */
   .col-sm-6 h4 {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
   .col-sm-6 h4 a {
     color: $mipg-primary-light;
   }
   .col-sm-6 p,
   .col-sm-6 i {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 }
 
