@@ -405,6 +405,14 @@ firstp { }
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
   }
+  /* People 页：成员名字至少与下方「Joining Fall 2023」等正文同大 */
+  .col-sm-6 h4 {
+    font-size: 1rem;
+  }
+  .col-sm-6 p,
+  .col-sm-6 i {
+    font-size: 1rem;
+  }
 }
 
 /* ========== Publications ========== */
